@@ -55,6 +55,11 @@ echo "\n";
 
 // 1.strip_tags  HTMLタグを取り除く
 // 使い方がよく分かりませんでした。
+$text = '<p>Test paragraph.</p><!-- Comment --> <a href="#fragment">Other text</a>';
+echo strip_tags($text);
+echo "\n";
+
+echo strip_tags($text, '<p><a>');
 
 // 2.array_push  配列に要素を追加する
 
